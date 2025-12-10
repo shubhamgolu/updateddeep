@@ -2,8 +2,7 @@
 
 import { useState } from "react";
 import FormWizard from "react-form-wizard-component";
-// // // import "react-form-wizard-component/dist/style.css";
-import "@/lib/form-wizard/custom-styles.css";
+import "react-form-wizard-component/dist/style.css";
 import { Select } from "@/components/FormElements/select"; 
 // import { CameraIcon } from "@/components/Icons/camera-icon";
 

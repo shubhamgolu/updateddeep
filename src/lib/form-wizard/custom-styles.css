@@ -1,8 +1,0 @@
-/* Custom form wizard styles */
-.form-wizard-step {
-  /* Copy styles from the package but remove @tailwind directives */
-}
-
-.form-wizard-progress {
-  /* Your custom styles */
-}

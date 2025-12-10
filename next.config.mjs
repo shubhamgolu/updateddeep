@@ -1,7 +1,5 @@
 /** @type {import("next").NextConfig} */
 const nextConfig = {
-  output: 'standalone', // Important for cPanel
-  distDir: '.next',
   images: {
     remotePatterns: [
       {
