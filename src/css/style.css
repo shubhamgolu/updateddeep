@@ -1,6 +1,7 @@
 /* FOR TAILWIND CSS v4 - Use @import */
-@import "tailwind             css";
-@import "../styles/theme.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 @layer base {
   body {
