@@ -180,7 +180,7 @@ export function AskAI({
                 setisAiWorking(false);
                 return;
               }
-
+  
               toast.success("AI responded successfully");
               setPreviousPrompt(prompt);
               setPrompt("");

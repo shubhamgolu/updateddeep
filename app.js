@@ -14,7 +14,7 @@ app.prepare().then(() => {
   server.all("*", (req, res) => {
     return handle(req, res);
   });
-
+  
   server.listen(port, () => {
     console.log("Next.js running on port " + port);
   });

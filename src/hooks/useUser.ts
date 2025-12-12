@@ -8,8 +8,8 @@ import { toast } from "sonner";
 export const useUser = (initialData?: {
   user: User | null;
   errCode: number | null; 
-}) => { 
-                               
+}) => {   
+                                                                                                  
   const client = useQueryClient();
   const  { data: { user, errCode } = { user: null, errCode: null }, isLoading } =
     useQuery({
@@ -20,23 +20,19 @@ export const useUser = (initialData?: {
         if (authResult && "id" in authResult) {
           return { user: authResult as User, errCode: null };
         }
-                 
+                                                                                                                                                                                                                             
         return { user: null, errCode: 401 };
       },  
       refetchOnWindowFocus: false,
       refetchOnReconnect: false,
       refetchOnMount: false,
       retry: false,
-      initialData: initialData
+      initialData: initialData    
         ? { user: initialData?.user, errCode: initialData?.errCode }
            : undefined,
       enabled: true, // Enable the query to fetch the mock user
     });
-                       
-                                                                                                                                                                                                                                                                                                                                                
-                                                                         
-                                                                                                                                                     
-                                                                                                                                                                
+                                                                                                                                                                                                  
   const logout = async () => {
     // Since authe  ntication is removed, just reload the page
     toast.success("Logout successful");
